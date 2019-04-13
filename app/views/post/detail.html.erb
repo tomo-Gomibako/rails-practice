@@ -1,0 +1,9 @@
+<div class="detail-container">
+	<div class="detail post-container">
+		<div class="detail-text"><%= @post.text %></div>
+		<div class="detail-actions">
+			<%= link_to("edit", "/post/#{ @post.id }/edit", { :class => "button" }) %>
+			<%= link_to("delete", "/post/#{ @post.id }/delete", { :class => "button", :method => "post" }) %>
+		</div>
+	</div>
+</div>

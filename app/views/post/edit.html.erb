@@ -1,0 +1,12 @@
+<div class="detail-container">
+	<%= form_tag("/post/#{ @post.id }/edit") do %>
+	<div class="detail post-container">
+		<div class="detail-text">
+			<textarea class="edit-area" name="text"><%= @post.text %></textarea>
+		</div>
+		<div class="detail-actions">
+			<input type="submit" class="button" value="update" />
+		</div>
+	</div>
+	<% end %>
+</div>
