@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>RailsPractice</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,9 +10,6 @@
   </head>
 
   <body>
-    <% if flash[:status] %>
-    <div class="flash hidden <%= flash[:status][0] %>"><%= flash[:status][1] %></div>
-    <% end %>
     <%= yield %>
   </body>
 </html>

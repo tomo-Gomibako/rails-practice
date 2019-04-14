@@ -13,38 +13,3 @@
  *= require_tree .
  *= require_self
  */
-
-html, body {
-	margin: 0;
-}
-
-.flash {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 50px;
-	background-color: #ccc;
-}
-.success {
-	background-color: #3fa;
-}
-.failed {
-	background-color: #f67;
-}
-
-.button {
-	display: block;
-	padding: 5px 17px;
-	border: 1px solid #aaa;
-	border-radius: 15px;
-	color: #555;
-	font-size: 14px;
-	cursor: pointer;
-	text-decoration-line: none;
-	outline: none;
-	font-family: system-ui;
-}
-.button:hover {
-	background-color: #bbb;
-}
