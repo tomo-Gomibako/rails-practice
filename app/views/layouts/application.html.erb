@@ -10,6 +10,9 @@
   </head>
 
   <body>
+    <% if flash[:status] %>
+    <div class="flash hidden <%= flash[:status][0] %>"><%= flash[:status][1] %></div>
+    <% end %>
     <%= yield %>
   </body>
 </html>

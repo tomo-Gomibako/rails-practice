@@ -7,6 +7,9 @@
 		<div class="detail-actions">
 			<input type="submit" class="button" value="update" />
 		</div>
+		<% @post.errors.full_messages.each do |message| %>
+		<div><%= message %></div>
+		<% end %>
 	</div>
 	<% end %>
 </div>

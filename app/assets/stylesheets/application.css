@@ -18,6 +18,21 @@ html, body {
 	margin: 0;
 }
 
+.flash {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	background-color: #ccc;
+}
+.success {
+	background-color: #3fa;
+}
+.failed {
+	background-color: #f67;
+}
+
 .button {
 	display: block;
 	padding: 5px 17px;

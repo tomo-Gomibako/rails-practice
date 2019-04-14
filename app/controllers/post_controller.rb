@@ -10,7 +10,12 @@ class PostController < ApplicationController
 
   def create
     text = params[:text]
-    Post.new(text: text).save
+    post = Post.new(text: text)
+    if post.save
+      flash[:status] = ["success", "投稿されました！"]
+    else
+      flash[:status] = ["failed", "投稿に失敗しました"]
+    end
     redirect_to("/posts")
   end
 
@@ -24,8 +29,9 @@ class PostController < ApplicationController
     text = params[:text]
     post = Post.find_by(id: id)
     post.text = text
-    post.save
-    redirect_to("/post/#{ id }")
+    if post.save
+      redirect_to("/post/#{ id }")
+    end
   end
 
   def delete
