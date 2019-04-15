@@ -60,3 +60,8 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# markdown
+gem 'redcarpet', '~> 2.3.0'
+# syntax-highlight in markdown
+gem 'coderay'
