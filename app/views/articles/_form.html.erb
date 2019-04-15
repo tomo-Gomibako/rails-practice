@@ -28,8 +28,9 @@
 
   <div class="field">
     <%= form.label :content %>
-    <%= form.text_area :content %>
+    <%= form.hidden_field :content %>
   </div>
+  <%= render 'mdeditor' %>
 
   <div class="actions">
     <%= form.submit %>

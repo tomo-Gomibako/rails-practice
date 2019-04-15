@@ -65,3 +65,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'redcarpet', '~> 2.3.0'
 # syntax-highlight in markdown
 gem 'coderay'
+
+# ace editor
+gem 'ace-rails-ap'
+
+# hook page-moving
+gem 'jquery-rails'
