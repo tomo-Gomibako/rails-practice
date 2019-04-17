@@ -71,3 +71,6 @@ gem 'ace-rails-ap'
 
 # hook page-moving
 gem 'jquery-rails'
+
+# upload images
+gem 'carrierwave', '~> 1.0'
