@@ -7,7 +7,9 @@
 
 <p>
   <strong>Thumbnail:</strong>
-  <%= image_tag @article.thumbnail_url %>
+  <% if thumbnail_url = @article.thumbnail_url %>
+  <%= image_tag thumbnail_url %>
+  <% end %>
 </p>
 
 <p>

@@ -10,13 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_17_131607) do
+ActiveRecord::Schema.define(version: 2019_04_18_033343) do
 
   create_table "articles", force: :cascade do |t|
     t.string "title"
     t.string "thumbnail"
     t.string "link"
     t.text "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "media", force: :cascade do |t|
+    t.string "title"
+    t.text "discription"
+    t.string "url"
+    t.string "url_large"
+    t.string "url_medium"
+    t.string "url_small"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -74,3 +74,6 @@ gem 'jquery-rails'
 
 # upload images
 gem 'carrierwave', '~> 1.0'
+
+# Bootstrap4
+gem 'bootstrap', '~> 4.1.1'

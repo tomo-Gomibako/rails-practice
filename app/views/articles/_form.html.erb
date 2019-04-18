@@ -18,7 +18,8 @@
 
   <div class="field">
     <%= form.label :thumbnail %>
-    <%= form.file_field :thumbnail %>
+    <%= form.hidden_field :thumbnail %>
+    <%= link_to 'Upload', new_medium_path, remote: true, class: "btn btn-lg btn-primary" %>
   </div>
 
   <div class="field">
@@ -36,3 +37,4 @@
     <%= form.submit %>
   </div>
 <% end %>
+<div id="medium-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"></div>

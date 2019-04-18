@@ -20,3 +20,5 @@
 	
 //= require ace-rails-ap
 //= require ace/theme-monokai
+
+//= require bootstrap-sprockets
