@@ -13,25 +13,13 @@
 <p>
   <strong>Medium:</strong>
   <div>
-    <% if medium_url = @medium.medium_url %>
-    <%= image_tag medium_url %>
+    <% if medium = @medium.medium %>
+    <div><%= image_tag medium.url %></div>
+    <div><%= image_tag medium.large.url %></div>
+    <div><%= image_tag medium.medium.url %></div>
+    <div><%= image_tag medium.small.url %></div>
     <% end %>
   </div>
-</p>
-
-<p>
-  <strong>Url large:</strong>
-  <%= @medium.url_large %>
-</p>
-
-<p>
-  <strong>Url medium:</strong>
-  <%= @medium.url_medium %>
-</p>
-
-<p>
-  <strong>Url small:</strong>
-  <%= @medium.url_small %>
 </p>
 
 <%= link_to 'Edit', edit_medium_path(@medium) %> |

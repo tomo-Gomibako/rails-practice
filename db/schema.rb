@@ -25,9 +25,6 @@ ActiveRecord::Schema.define(version: 2019_04_19_023632) do
     t.string "title"
     t.text "description"
     t.string "medium"
-    t.string "url_large"
-    t.string "url_medium"
-    t.string "url_small"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
