@@ -7,7 +7,8 @@
 
 <p>
   <strong>Thumbnail:</strong>
-  <%= image_tag @article.thumbnail_url %>
+  <% image_src = @article.thumbnail_url || "/no-image.png" %>
+  <%= image_tag image_src %>
 </p>
 
 <p>
