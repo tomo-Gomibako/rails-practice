@@ -74,6 +74,3 @@ gem 'jquery-rails'
 
 # upload images
 gem 'carrierwave', '~> 1.0'
-
-# authentication
-gem 'devise'
