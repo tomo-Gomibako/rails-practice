@@ -1,0 +1,26 @@
+<%= semantic_form_for [:admin, @article], builder: ActiveAdmin::FormBuilder do |form| %>
+  <fieldset class="input">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <fieldset class="input">
+    <%= form.label :thumbnail %>
+    <%= form.file_field :thumbnail %>
+  </div>
+
+  <fieldset class="input">
+    <%= form.label :link %>
+    <%= form.text_field :link %>
+  </div>
+
+  <fieldset class="input">
+    <%= form.label :content %>
+    <%= form.hidden_field :content %>
+  </div>
+  <%= render 'mdeditor' %>
+
+  <fieldset class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
