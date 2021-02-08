@@ -73,4 +73,4 @@ gem 'ace-rails-ap'
 gem 'jquery-rails'
 
 # upload images
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
